@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+html{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    max-width: 23.4375em; /* 375 / 16 = 23.4375 */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Bai Jamjuree', sans-serif;
+    box-sizing: border-box;
+}
+
+/* generics classes */
+
+.ios-button{
+    background: hsl(171, 66%, 44%);
+    color: white;
+    padding: 1.2em 5.5em;
+    border-radius: 30px ;
+    border: none;
+    margin-bottom: 1.5em;
+    cursor: pointer;
+}
+
+.mac-button{
+    background: hsl(233, 100%, 69%);
+    color: white;
+    font-weight: bolder;
+    padding: 1.2em 5.2em;
+    border-radius: 30px;
+    border: none ;
+    cursor: pointer;
+}
+
+.hidden{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    display: block;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: hsl(210, 10%, 33%);
+}
+
+p{
+    color:  hsl(201, 11%, 66%);
+}
+
+a{
+    text-decoration: none;
+    color: hsl(210, 10%, 33%);
+}
+
+.brand{
+    margin-bottom: 5em;
+}
+
+/* start */
+
+.header{
+    background-image: url(/images/bg-header-mobile.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.header-logo{
+    margin: 7em 0 3em;
+    width: 30%;
+}
+
+.header h1{
+    margin: 0 1em .2em ;
+    font-size: 2em;
+}
+
+.header p{
+    line-height: 1.7em;
+    margin: 1em 2.1em 2.5em;
+    
+}
+
+/* mid */
+/* primary section */
+
+.section-snippets{
+    text-align: center;
+}
+
+.section-snippets h1{
+    margin: 7em 1em 1em ;
+    font-size: 2em;
+    
+}
+
+.section-snippets p{
+    margin: 1em 2.5em 5em;
+    line-height: 1.7em;
+}
+
+.monitor-image{
+    width: 90%;
+}
+
+.section-snippets h3{
+    margin-top: 3em;
+    
+}
+
+.section-snippets :last-child{
+    margin-bottom: 5em;
+}
+
+/* secondary section */
+
+.section-clipboard{
+    text-align: center;
+}
+
+.section-clipboard h2{
+    margin: 5em 1.5em 1em ;
+    
+}
+
+.section-clipboard p{
+    margin: 0 2em 1em ;
+    line-height: 1.7;
+}
+
+.devices-image{
+    width: 90%;
+    margin-top: 3em;
+    margin-bottom: 5em;
+}
+
+/* third section */
+
+.section-workflow{
+    text-align: center;
+    
+  
+}
+
+.section-workflow h2{
+    margin: 0 1.5em 1em ;
+    
+}
+
+.section-workflow p{
+    margin: 0 2em 7em ;
+    
+}
+
+/* fourth section */
+
+.workflows-brands{
+    margin-top: 5em;
+}
+
+.workflow-icons h3{
+    margin: 2.5em 0 1em;
+}
+
+.workflow-icons p{
+    margin-bottom: 3.5em;
+}
+
+
+.workflows-brands ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+/* fifth section */
+
+.platforms-downloads{
+    text-align: center;
+    margin: 5em 0 10em;
+}
+
+.platforms-downloads h2{
+    font-size: 2em;
+    margin: 0 1.7em 1em ;
+}
+
+.platforms-downloads p{
+    margin: 0 2.5em 3em ;
+    line-height: 1.7em;
+}
+
+/* end */
+
+.footer{
+    text-align: center;
+    width: 100%;
+    padding-top: 3em;
+    background: hsl(193, 100%, 98%);;
+}
+
+.logo-footer{
+    width: 15%;
+
+}
+
+.about-us{
+    list-style: none;
+    padding: 0;
+    font-size: 1em;
+}
+
+.about-us li{
+    margin-bottom: 1em;
+}
+
+.social-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3em;
+    margin-top: 1em;
+    padding: 0;
+    list-style: none;
+}
+
+.social-media li{
+  margin: .7em;
+}
+
+
+
+@media screen and (min-width: 90em) { /* 1440 / 16 = 90 */
+
+/* generics classes */
+
+    body{
+        max-width: 90em;
+        background-image: url(/images/bg-header-desktop.png);
+        background-size: contain;
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+
+
+    .ios-button{
+        background: hsl(171, 66%, 44%);
+        color: white;
+        padding: 1.2em 3em;
+        border-radius: 30px ;
+        border: none;
+        margin-right: 1.5em;
+        font-size: 1.2em;
+        cursor: pointer;
+    }
+
+    .ios-button:hover{
+        box-shadow: 0px 17px 17px hsl(171, 67%, 74%);
+        transition: 1s ease-in-out;
+    }
+
+    .mac-button{
+        background: hsl(233, 100%, 69%);
+        color: white;
+        font-weight: bolder;
+        padding: 1.2em 3em;
+        border-radius: 30px;
+        border: none ;
+        font-size: 1.2em;
+        cursor: pointer;
+        
+    }
+
+    .mac-button:hover{
+        box-shadow: 0px 17px 17px hsl(233, 96%, 71%);;
+        transition: 1s ease-in-out;
+    }
+
+
+
+    a{
+        text-decoration: none;
+        color: hsl(210, 10%, 33%);
+    }
+
+    .hidden{
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        opacity: 0;
+        display: block;
+    }
+
+    /* top */
+
+    .header-logo{
+        margin: 7em 0 3em;
+        width: 15%;
+    }
+
+    .header{
+        background: none;
+        max-width: 55%;
+    }
+
+    .header h1{
+        margin: 0 1em .5em ;
+        font-size: 2.4em;
+    }
+
+    .header p{
+        font-size: 1.3em;
+        margin: 0 2.5em 2.1em ;
+    }
+
+    /* mid */
+    /* primary section */
+
+    .section-snippets{
+        display: flex ;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .section-snippets h1{
+        font-size: 2.4em;
+    }
+
+    .section-snippets :nth-child(1){
+        margin-top: 5em;
+    }
+
+    .section-snippets :nth-child(2){
+        padding: 0;
+        text-align: center;
+        margin: 0 17em;
+        margin-bottom: 7em;
+        font-size: 1.3em;
+    }
+
+    .section-snippets h3{
+        margin: 3em 3em .5em;
+        text-align: justify;
+        padding-left: 35em;
+        font-size: 1.3em;
+    }
+
+    .section-snippets p{
+        font-size: 1.3em;
+        margin: 0 13em;
+        margin-right: 9em;
+        text-align: justify;
+        padding-left: 25em;
+    }
+        
+
+    .monitor-image{
+        width: 45%;
+        position: absolute;
+        top: 37em;
+        left: 5em;
+    }
+
+    .section-clipboard h2{
+        font-size: 2em;
+
+    }
+
+    .section-clipboard p{
+        font-size: 1.3em;
+        margin: 0 15em;
+        
+    }
+
+    .devices-image{
+        width: 50%;
+        margin: 5em 0;
+    }
+
+    .section-workflow h2{
+        font-size: 2.4em;
+
+    }
+
+    .section-workflow p{
+        font-size: 1.3em;
+        margin: 0 3em 3.5em ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* secondary section */
+
+    .workflow-icons{
+        display: inline-block;
+        width: 25em;
+        
+    }
+
+
+    .workflow-icons h3{
+        font-size: 1.5em;
+    }
+
+    .workflow-icons p{
+        font-size: 1.2em;
+        margin: 0 .5em 0  ;
+    }
+
+    .workflows-brands ul{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .workflows-brands li{
+        margin-right: 5em;
+    }
+
+    .platforms-downloads p{
+        font-size: 1.3em;
+        margin: 0 15em 3em ;
+        
+    }
+
+    /* end */
+
+    .footer{
+        width: 100%;
+        height: 30%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        
+    }
+
+
+    .logo-footer{
+        width: 7%;
+        height: 5%;
+        margin: 5em;
+        
+    }
+
+    .about-us{
+        max-width: 90%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        text-align: justify;
+        
+    }
+
+    .about-us li{
+        width: 20%;
+        height: 20%;
+        font-size: 1em;
+        padding: 1em;
+        
+        
+        
+    }
+
+    .about-us a:hover{
+        color: hsl(171, 66%, 44%);
+        transition: 1s ease-in-out;
+    }
+
+    .faqs{
+        order: 1;
+    }
+
+    .contact{
+        order: 4;
+    }
+
+    .privacy{
+        order: 2;
+    }
+
+    .press-kit{
+        order: 5;
+    }
+
+    .install-guide{
+        order: 3;
+    } 
+
+    .social-media{
+        margin-right: 5em;
+    }
+
+    .social-media li{
+        margin-right: 1.2em;
+        font-size: 1.3em;
+    }
+
+    .social-media a:hover{
+        color: hsl(171, 66%, 44%);
+        transition: 1s ease-in-out;
+    }
+
+
+
+
+}
